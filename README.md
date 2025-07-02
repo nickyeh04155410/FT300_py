@@ -1,4 +1,3 @@
-# FT300_py
 # FT300 Force/Torque Sensor UI
 **User Guide & Operating Instructions**
 
