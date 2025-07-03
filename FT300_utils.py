@@ -214,7 +214,7 @@ class ForceSensor:
 #     sensor = ForceSensor(port_name="COM5")  # port_name 請依你實際狀況修改
 
 #     # 啟動感測器讀取資料的子程序
-#     p = Process(target=sensor.read_sensor, args=(FT_data, lock))
+#     p = Process(target=sensor.read_sensor, args=(FT_data, lock), kwargs={"use_zero_ref": True})  # If you do not want to use zero reference, set use_zero_ref=False
 #     p.daemon = True  # 主程式結束時自動關閉子程序
 #     p.start()
 
@@ -229,8 +229,8 @@ class ForceSensor:
             
 #             with lock:
 #                 ft_values = [FT_data[i] for i in range(6)]
-#             # print(f"Current FT300 readings: Fx={ft_values[0]:.2f}N, Fy={ft_values[1]:.2f}N, Fz={ft_values[2]:.2f}N, "
-#             #       f"Tx={ft_values[3]:.3f}Nm, Ty={ft_values[4]:.3f}Nm, Tz={ft_values[5]:.3f}Nm")
+#             print(f"Current FT300 readings: Fx={ft_values[0]:.2f}N, Fy={ft_values[1]:.2f}N, Fz={ft_values[2]:.2f}N, "
+#                   f"Tx={ft_values[3]:.3f}Nm, Ty={ft_values[4]:.3f}Nm, Tz={ft_values[5]:.3f}Nm")
         
 #             count += 1
 #             # --------- 每秒顯示一次 Hz ---------
