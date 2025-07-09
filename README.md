@@ -7,6 +7,8 @@
 
 This application provides a real-time graphical interface for viewing and recording data from the Robotiq FT300 force/torque sensor. Data is updated at 100 Hz, displayed as plots, and can be saved for later analysis.
 
+![image](https://github.com/user-attachments/assets/f3227f13-2d90-4f38-827b-fe2192a2fe75)
+
 ---
 
 ## 1. Selecting the Sensor COM Port
